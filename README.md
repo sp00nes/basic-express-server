@@ -1,37 +1,41 @@
-# package.json Notes:
+# LAB - Class 02
 
-## For React Applications
+## Project: Basic Express server
 
- To deploy your application at GitHub pages, you'll need to add a home page property to your package.json which points to the deployed base URL of your GitHub Pages site.
- 
- *NOTE: This will break deployments to other hosting services such as Netlify, Vercel, or AWS Amplify, so if you later wish to deploy there, remove this property completely*
- 
-     {
-       "homepage": "https://yourname.github.io/repository-name"
-     }
+### Author: Martin Hansen
 
-## Node / Express Applications
+### Problem Domain
 
-### For Tests
-Your Scripts section should have the following, so that you can easily run tests locally and in your CI
+Basic express server with test and good practice
 
-  "scripts": {
-    "start": "node index.js",
-    "lint": "eslint **/*.js",
-    "test": "jest --verbose --coverage",
-    "test-watch": "jest --watchAll --verbose --coverage"
-},
+### Links and Resources
 
+- [GitHub Actions ci/cd](https://github.com/sp00nes/basic-express-server/actions)
+- Dev [back-end server url](https://basic-express-server-0xtc.onrender.com)
+- Pull [back-end server url](https://github.com/sp00nes/basic-express-server/pull/1)
 
-### For NPM Modules
+### Setup
 
-If you are creating a module to deploy at NPM, you'll want a "bin" section that identifies the name of the global command to run and your .js file that runs when called.
+#### `.env` requirements (where applicable)
 
-"bin": {
-    "fetch": "index.js"
-}
+PORT=yourport
 
-Additionally, that file should have as it's first line, so that it'll run without having to type "node filename.js" every time
+#### initialize/run your application
 
-#!/usr/bin/env node
+- nodemon (npm start)
 
+#### How to use your library (where applicable)
+
+#### Features / Routes
+
+- Feature One: Deploy Dev
+
+#### Tests
+
+fill this in as you see fit
+
+- run tests with "npm test"
+
+#### UML
+
+![Lab-02 UML](assets/lab-02-uml.png)
